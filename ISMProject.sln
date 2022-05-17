@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISMExcelHelper", "ISMExcelHelper\ISMExcelHelper.csproj", "{6778872D-D516-48A4-88E5-97EF1F01242D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISMExtensions", "ISMExtensions\ISMExtensions.csproj", "{FC9A51FE-327B-42B0-8066-DE407C4F03BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6778872D-D516-48A4-88E5-97EF1F01242D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6778872D-D516-48A4-88E5-97EF1F01242D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6778872D-D516-48A4-88E5-97EF1F01242D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6778872D-D516-48A4-88E5-97EF1F01242D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBAACEC0-83C7-4273-8259-916F7E827FF6}
+	EndGlobalSection
+EndGlobal
