@@ -151,39 +151,8 @@ namespace ISMExcelHelper
             return data;
         }
 
-        public static T ChangeType<T>(object value)
-        {
-            var isNull = IsNull(value);
-            var type = typeof(T);
-
-            if (isNull)
-            {
-                if (!type.IsNullAssignable())
-                {
-                    throw new InvalidCastException($"Cannot cast null to {type}");
-                }
-
-                // null-assignable types (reference types and nullable types) can deal with null
-                return default;
-            }
-
-            // use this type from here on to avoid the redundant 'if nullable .. else ..'
-            var nonNullableType = type.AsNonNullable();
-
-            if (nonNullableType.IsEnum)
-            {
-                // convert the value to the underlying type of the enum and
-                // convert that result to the enum
-                var enumUnderlyingType = Enum.GetUnderlyingType(nonNullableType);
-                var enumUnderlyingValue = Convert.ChangeType(value, enumUnderlyingType);
-                return (T)Enum.ToObject(nonNullableType, enumUnderlyingValue);
-            }
-
-            // let .NET handle remaining convertions
-            return (T)Convert.ChangeType(value, nonNullableType);
-        }
-
-        public static bool IsNull(object value)
+        
+        private static bool IsNull(object value)
         {
             // - value == null uses the type's equality operator (usefull for Nullable)
             // - ReferenceEquals checks for actual null references
@@ -192,25 +161,6 @@ namespace ISMExcelHelper
             return value == null
                 || ReferenceEquals(null, value)
                 || value is DBNull;
-        }
-    }
-
-
-    public static class TypeExtension
-    {
-        public static bool IsNullable(this Type type)
-        {
-            return type.IsGenericType && type.GetGenericTypeDefinition().Equals(typeof(Nullable<>));
-        }
-
-        public static bool IsNullAssignable(this Type type)
-        {
-            return IsNullable(type) || !type.IsValueType;
-        }
-
-        public static Type AsNonNullable(this Type type)
-        {
-            return type.IsNullable() ? Nullable.GetUnderlyingType(type) : type;
         }
     }
 }
