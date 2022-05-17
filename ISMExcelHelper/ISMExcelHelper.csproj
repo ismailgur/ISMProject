@@ -18,11 +18,4 @@
 	  <ProjectReference Include="..\ISMExtensions\ISMExtensions.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Include="ism.png">
-	    <Pack>True</Pack>
-	    <PackagePath></PackagePath>
-	  </None>
-	</ItemGroup>
-
 </Project>
