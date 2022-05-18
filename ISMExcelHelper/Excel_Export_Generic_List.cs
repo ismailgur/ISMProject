@@ -16,6 +16,7 @@ namespace ISMExcelHelper
             using (ExcelPackage package = new ExcelPackage())
             {
                 package.Workbook.Worksheets.Add(workSheetName);
+
                 ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
 
                 try
@@ -79,7 +80,7 @@ namespace ISMExcelHelper
 
                     stream = new MemoryStream(package.GetAsByteArray());
                 }
-                catch (Exception err)
+                catch (Exception)
                 {
                     throw;
                 }

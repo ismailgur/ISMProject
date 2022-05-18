@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EPPlus", "EPPlus", "{05BFFB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPPlus.MultiTarget", "EPPlus\EPPlus.MultiTarget.csproj", "{279C52E7-C825-4F90-83DF-D9252AEF373F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExcelDataReader", "ExcelDataReader", "{95D69D8F-0131-4FF3-9E9D-51308786D461}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelDataReader", "ExcelDataReader\ExcelDataReader.csproj", "{0FE98677-3421-4BB1-AE40-2940D6DC5659}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,12 +39,17 @@ Global
 		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE98677-3421-4BB1-AE40-2940D6DC5659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE98677-3421-4BB1-AE40-2940D6DC5659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE98677-3421-4BB1-AE40-2940D6DC5659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE98677-3421-4BB1-AE40-2940D6DC5659}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{279C52E7-C825-4F90-83DF-D9252AEF373F} = {05BFFB42-D229-4BD3-B667-0F71EBAF41AE}
+		{0FE98677-3421-4BB1-AE40-2940D6DC5659} = {95D69D8F-0131-4FF3-9E9D-51308786D461}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBAACEC0-83C7-4273-8259-916F7E827FF6}

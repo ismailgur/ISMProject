@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
@@ -9,11 +9,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="ExcelDataReader" Version="3.6.0" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\EPPlus\EPPlus.MultiTarget.csproj" />
+	  <ProjectReference Include="..\ExcelDataReader\ExcelDataReader.csproj" />
 	  <ProjectReference Include="..\ISMExtensions\ISMExtensions.csproj" />
 	</ItemGroup>
 
