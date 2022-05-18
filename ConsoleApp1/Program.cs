@@ -17,14 +17,21 @@ namespace ConsoleApp1
                 FullName = "İsmail GÜr"
             });
 
-            var excelStream = ISMExcelHelper.Excel_Export_Generic_List<testmodel>.Export(list, "test");
             string path = @"c:\users\ismail\desktop\test.xlsx";
 
-            using (var fileStream = File.Create(path))
-            {
-                excelStream.Seek(0, SeekOrigin.Begin);
-                excelStream.CopyTo(fileStream);
-            }
+            //var excelStream = ISMExcelHelper.Excel_Export_Generic_List<testmodel>.Export(list, "test");
+
+
+            //using (var fileStream = File.Create(path))
+            //{
+            //    excelStream.Seek(0, SeekOrigin.Begin);
+            //    excelStream.CopyTo(fileStream);
+            //}
+
+            var data = ISMExcelHelper.Excel_Import_Generic_List<testmodel>.GetData(path,"test");
+            Console.WriteLine(data.Count);
+            Console.WriteLine(data[0].FullName);
+            Console.ReadLine();
         }
     }
 
