@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISMExcelHelper", "ISMExcelHelper\ISMExcelHelper.csproj", "{6778872D-D516-48A4-88E5-97EF1F01242D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISMExcelHelper", "ISMExcelHelper\ISMExcelHelper.csproj", "{6778872D-D516-48A4-88E5-97EF1F01242D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISMExtensions", "ISMExtensions\ISMExtensions.csproj", "{FC9A51FE-327B-42B0-8066-DE407C4F03BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISMExtensions", "ISMExtensions\ISMExtensions.csproj", "{FC9A51FE-327B-42B0-8066-DE407C4F03BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{495D210E-0F92-4975-9698-7AEE2C5D1FDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EPPlus", "EPPlus", "{05BFFB42-D229-4BD3-B667-0F71EBAF41AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPPlus.MultiTarget", "EPPlus\EPPlus.MultiTarget.csproj", "{279C52E7-C825-4F90-83DF-D9252AEF373F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,20 @@ Global
 		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC9A51FE-327B-42B0-8066-DE407C4F03BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495D210E-0F92-4975-9698-7AEE2C5D1FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495D210E-0F92-4975-9698-7AEE2C5D1FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495D210E-0F92-4975-9698-7AEE2C5D1FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495D210E-0F92-4975-9698-7AEE2C5D1FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279C52E7-C825-4F90-83DF-D9252AEF373F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{279C52E7-C825-4F90-83DF-D9252AEF373F} = {05BFFB42-D229-4BD3-B667-0F71EBAF41AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBAACEC0-83C7-4273-8259-916F7E827FF6}

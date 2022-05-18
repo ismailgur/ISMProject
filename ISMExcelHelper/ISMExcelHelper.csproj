@@ -4,17 +4,16 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<RepositoryUrl>https://github.com/ismailgur/ISMProject.git</RepositoryUrl>
-		<PackageIcon>ism.png</PackageIcon>
+		<PackageIcon></PackageIcon>
 		<Description>Generic list to excel export and excel file to generic list generate.</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="EPPlus" Version="6.0.4" />
 		<PackageReference Include="ExcelDataReader" Version="3.6.0" />
-		<PackageReference Include="OfficeOpenXml.Core.ExcelPackage" Version="1.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\EPPlus\EPPlus.MultiTarget.csproj" />
 	  <ProjectReference Include="..\ISMExtensions\ISMExtensions.csproj" />
 	</ItemGroup>
 
